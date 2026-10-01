@@ -1,0 +1,7 @@
+{"type":"call","ts":1790844353,"task":"approve-kotlin","model":"opus","model_id":"claude-opus-5"}
+{"type":"call","ts":1790844413,"task":"diagnose","model":"haiku","model_id":"claude-haiku-4-5"}
+{"type":"call","ts":1790847898,"task":"jira-dev-notes","model":"haiku","model_id":"claude-haiku-4-5"}
+{"type":"call","ts":1790847933,"task":"approve-kotlin","model":"opus","model_id":"claude-opus-5"}
+{"type":"call","ts":1790847994,"task":"diagnose","model":"haiku","model_id":"claude-haiku-4-5"}
+{"type":"call","ts":1790849826,"task":"heal-build","model":"opus","model_id":"claude-opus-5"}
+{"type":"call","ts":1790853270,"task":"heal-build","model":"opus","model_id":"claude-opus-5"}

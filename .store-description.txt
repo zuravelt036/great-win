@@ -1,0 +1,5 @@
+⚡ Enter a dark tech laboratory where energy flows through three nested concentric rings. Your task is to rotate each ring to align the conductive pathways, creating an unbroken circuit from the central golden core outward to four distant receivers. The rings move in precise steps, and you must guide the violet energy along the path by careful manipulation of their positions.
+
+🎮 Tap any ring to rotate it clockwise one full step, or hold to turn it counter-clockwise. Each rotation costs a move from your limited budget, and the difficulty escalates as you progress through schemes with tighter move constraints and more complex ring configurations. When you believe the circuit is complete, press GO to validate your solution and watch the energy flow if your path is correct.
+
+🏆 Connect all four receivers to win the round and earn up to three stars based on how many moves remain. Fail the circuit check three times and the reactor shuts down—you must also complete the puzzle before your move counter reaches zero. Every successful scheme unlocks the next, building your mastery from eight segments up to twelve.

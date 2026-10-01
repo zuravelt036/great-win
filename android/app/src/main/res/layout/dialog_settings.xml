@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_bg"
+    android:padding="@dimen/space_xl">
+
+    <TextView
+        android:id="@+id/settings_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:letterSpacing="0.2"
+        android:text="@string/title_settings"
+        android:textAppearance="@style/TextAppearance.App.Title"
+        android:textSize="18sp" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/settings_sound"
+        style="@style/Widget.App.Switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_title"
+        android:layout_marginTop="@dimen/space_xl"
+        android:text="@string/setting_sound" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/settings_vibration"
+        style="@style/Widget.App.Switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_sound"
+        android:layout_marginTop="@dimen/space_md"
+        android:text="@string/setting_vibration" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/settings_contrast"
+        style="@style/Widget.App.Switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_vibration"
+        android:layout_marginTop="@dimen/space_md"
+        android:text="@string/setting_contrast" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/settings_close"
+        style="@style/Widget.App.Button.Secondary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_secondary_height"
+        android:layout_below="@id/settings_contrast"
+        android:layout_marginTop="@dimen/space_xl"
+        android:text="@string/btn_close" />
+
+</RelativeLayout>

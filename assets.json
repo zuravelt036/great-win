@@ -1,0 +1,59 @@
+{
+  "assets": [
+    {
+      "name": "icon_1024",
+      "type": "icon",
+      "prompt": "App icon, one single glossy 3D concentric energy ring emblem, violet and teal glowing circular arcs around a bright golden core, centered, dark indigo radial gradient background, crisp, no text"
+    },
+    {
+      "name": "bg_loader",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game loader background, dark indigo tech laboratory, violet and teal energy glow, faint circuit grid, cinematic, no text, no UI elements"
+    },
+    {
+      "name": "bg_menu",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game menu background, deep indigo sci-fi energy chamber, violet and magenta light beams, vibrant, 3D render, no text, no UI elements"
+    },
+    {
+      "name": "bg_game",
+      "type": "bg",
+      "prompt": "Vertical 9:16 mobile game background, soft blurred dark indigo circuit field, low contrast for UI overlay, no text, no UI elements"
+    },
+    {
+      "name": "sprite_core",
+      "type": "sprite",
+      "prompt": "One single glowing golden energy core orb, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_node",
+      "type": "sprite",
+      "prompt": "One single teal glowing hexagonal receiver node, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_ring_hint",
+      "type": "sprite",
+      "prompt": "One single violet glowing broken circular ring arc, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_scheme_a",
+      "type": "sprite",
+      "prompt": "One single teal concentric circles emblem, centered icon, flat glossy render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_scheme_b",
+      "type": "sprite",
+      "prompt": "One single violet concentric circles emblem, centered icon, flat glossy render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_scheme_c",
+      "type": "sprite",
+      "prompt": "One single golden concentric circles emblem, centered icon, flat glossy render, isolated on plain white, no other objects"
+    },
+    {
+      "name": "sprite_spark",
+      "type": "sprite",
+      "prompt": "One single bright teal energy spark burst, centered icon, glossy 3D render, isolated on plain white, no other objects"
+    }
+  ]
+}

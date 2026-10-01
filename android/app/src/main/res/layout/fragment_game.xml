@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg">
+
+    <ImageView
+        android:id="@+id/game_backdrop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.5"
+        android:importantForAccessibility="no"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/game_grid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.12"
+        android:background="@drawable/bg_grid_overlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/game_vignette"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/overlay_game_vignette"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/game_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_header_scrim"
+        android:paddingStart="@dimen/space_md"
+        android:paddingTop="@dimen/status_bar_pad"
+        android:paddingEnd="@dimen/space_md"
+        android:paddingBottom="@dimen/space_sm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/game_back"
+            style="@style/Widget.App.Button.Icon"
+            android:layout_width="@dimen/icon_btn"
+            android:layout_height="@dimen/icon_btn"
+            android:contentDescription="@string/cd_back"
+            app:icon="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/game_scheme_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:letterSpacing="0.18"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.App.Label"
+            android:textColor="@color/color_text_primary"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/game_moves"
+            app:layout_constraintStart_toEndOf="@id/game_back"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="VIOLET CORE" />
+
+        <TextView
+            android:id="@+id/game_moves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:accessibilityLiveRegion="polite"
+            android:background="@drawable/shape_pill"
+            android:minHeight="@dimen/btn_min_touch"
+            android:gravity="center"
+            android:paddingStart="@dimen/space_md"
+            android:paddingEnd="@dimen/space_md"
+            android:textAppearance="@style/TextAppearance.App.Mono"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="MOVES 14" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/game_board_area"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingStart="@dimen/screen_margin"
+        android:paddingEnd="@dimen/screen_margin"
+        app:layout_constraintBottom_toTopOf="@id/game_controls"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/game_header">
+
+        <com.ZfQnLmK.vJxRpT.core.ui.RingBoardView
+            android:id="@+id/game_board"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/game_controls"
+        style="@style/Widget.App.Card.Hud"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/controls_card_height"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/controls_bottom_margin"
+        app:cardCornerRadius="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/game_brackets"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_corner_brackets" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/space_lg"
+                android:paddingTop="@dimen/space_md"
+                android:paddingEnd="@dimen/space_lg"
+                android:paddingBottom="@dimen/space_md">
+
+                <LinearLayout
+                    android:id="@+id/game_checks_row"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/game_checks_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/space_sm"
+                        android:text="@string/label_checks"
+                        android:textAppearance="@style/TextAppearance.App.Label"
+                        android:textSize="11sp" />
+
+                    <View
+                        android:id="@+id/game_check_1"
+                        android:layout_width="@dimen/pip_size"
+                        android:layout_height="@dimen/pip_size"
+                        android:layout_marginEnd="@dimen/space_xs"
+                        android:background="@drawable/chip_pip_on" />
+
+                    <View
+                        android:id="@+id/game_check_2"
+                        android:layout_width="@dimen/pip_size"
+                        android:layout_height="@dimen/pip_size"
+                        android:layout_marginEnd="@dimen/space_xs"
+                        android:background="@drawable/chip_pip_on" />
+
+                    <View
+                        android:id="@+id/game_check_3"
+                        android:layout_width="@dimen/pip_size"
+                        android:layout_height="@dimen/pip_size"
+                        android:background="@drawable/chip_pip_on" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/game_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:accessibilityLiveRegion="polite"
+                    android:textAppearance="@style/TextAppearance.App.Mono"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="SCORE 1240" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/game_restart"
+                    style="@style/Widget.App.Button.Icon"
+                    android:layout_width="@dimen/icon_btn"
+                    android:layout_height="@dimen/icon_btn"
+                    android:contentDescription="@string/cd_restart"
+                    app:icon="@drawable/ic_restart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/game_go"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/game_checks_row" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/game_go"
+                    style="@style/Widget.App.Button.Primary"
+                    android:layout_width="180dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="@dimen/space_md"
+                    android:text="@string/btn_go"
+                    app:icon="@drawable/ic_bolt"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/game_restart"
+                    app:layout_constraintTop_toBottomOf="@id/game_checks_row" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

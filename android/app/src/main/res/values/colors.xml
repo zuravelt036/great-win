@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_bg">#11122A</color>
+    <color name="color_bg_deep">#05061A</color>
+    <color name="color_bg_violet">#1B1140</color>
+    <color name="color_surface">#1A1636</color>
+    <color name="color_surface_alt">#2A2250</color>
+    <color name="color_primary">#743CC8</color>
+    <color name="color_primary_bright">#9A4FF0</color>
+    <color name="color_secondary">#25D2C1</color>
+    <color name="color_gold">#F0C250</color>
+    <color name="color_danger">#EF468A</color>
+    <color name="color_text_primary">#F8F0E0</color>
+    <color name="color_text_secondary">#B9B6D8</color>
+    <color name="color_text_muted">#6E6A99</color>
+    <color name="color_stroke">#33743CC8</color>
+    <color name="color_stroke_teal">#3325D2C1</color>
+    <color name="color_ring_idle">#4A4370</color>
+    <color name="color_ring_dim">#3A3360</color>
+    <color name="color_surface_translucent">#CC1A1636</color>
+    <color name="color_surface_strong">#E61A1636</color>
+    <color name="ripple_gold">#4DF0C250</color>
+    <color name="ripple_teal">#4D25D2C1</color>
+    <color name="scrim_top">#F211122A</color>
+    <color name="scrim_bottom">#B311122A</color>
+    <color name="brand_primary">#743CC8</color>
+    <color name="brand_on_primary">#F8F0E0</color>
+    <color name="brand_secondary">#25D2C1</color>
+    <color name="brand_on_secondary">#05061A</color>
+    <color name="brand_background">#11122A</color>
+    <color name="brand_surface">#1A1636</color>
+    <color name="brand_on_surface">#F8F0E0</color>
+</resources>

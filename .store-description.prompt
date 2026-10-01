@@ -1,0 +1,23 @@
+Write the English store description for this mobile game.
+
+RULES (all mandatory):
+- EXACTLY 3 or 4 paragraphs, one blank line between them.
+- Every paragraph STARTS with a single emoji that fits its content.
+- NEVER write the app name. Not once, in any spelling or spacing.
+- Do NOT describe UI elements (buttons, menus, panels, HUD, counters, pop-ups).
+- Write to make a player WANT to play: the concept, the setting, the feel,
+  what the player does, and what ends the round.
+- Plain prose. No headings, no bullet lists, no markdown, no surrounding quotes.
+- Output ONLY the description text - no preamble, no commentary.
+
+Match the tone of this example (a DIFFERENT game - copy the STYLE, not the content):
+Guide a cheerful penguin across the winter landscape on a small pair of sleds, gliding through blue ice, snowy cottages, and warmly lit lanterns. The sled moves automatically while you carefully steer through the peaceful frozen route.
+Swipe to adjust the direction, collect glowing lanterns, and avoid dangerous cracks in the ice. On later sections the path becomes narrower and gentle gusts of wind shift the trajectory, requiring more careful control.
+Reach the winter camp with the required number of lanterns to complete the journey. The round ends if all three units of warmth are lost or the sled falls into a crack three times. Success depends on steering and timing.
+(each of those paragraphs begins with a fitting emoji)
+
+READ THE DESIGN DOCUMENT AT THIS PATH AND DESCRIBE THAT GAME:
+C:/AndroidWorkspace/projects/GreatWin/prompts/GreatWin.md
+
+Read that file first, then write the description. Output ONLY the
+description text.

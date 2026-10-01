@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="@dimen/hex_badge"
+        android:layout_height="@dimen/hex_badge"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/shape_hex_badge">
+
+        <TextView
+            android:id="@+id/step_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.App.Mono"
+            android:textSize="16sp"
+            tools:text="1" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/space_md"
+        android:layout_marginEnd="@dimen/space_md"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/step_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.App.Title"
+            tools:text="TAP A RING" />
+
+        <TextView
+            android:id="@+id/step_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xs"
+            android:textAppearance="@style/TextAppearance.App.Body"
+            android:textSize="13sp"
+            tools:text="Body" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/step_sprite"
+        android:layout_width="@dimen/sprite_md"
+        android:layout_height="@dimen/sprite_md"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/cd_ring_hint"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sprite_ring_hint" />
+
+</merge>

@@ -1,0 +1,10 @@
+{
+  "attempts": [
+    {
+      "stage": "assets",
+      "raw_stage": "assets",
+      "status": "PIPELINE_INFRA_ERROR",
+      "at_epoch": 1790847907
+    }
+  ]
+}

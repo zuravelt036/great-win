@@ -1,0 +1,8 @@
+{
+  "outcome": "succeeded",
+  "fix_type": "transient",
+  "resume_from": "assets",
+  "message": "Pipeline resumed from assets and finished.",
+  "log": "projects/GreatWin/.resume-20261001-114508.log",
+  "attempted_at_epoch": 1790855096
+}

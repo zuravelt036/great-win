@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scheme_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space_sm"
+    android:minHeight="@dimen/scheme_card_min"
+    app:cardBackgroundColor="@color/color_surface_translucent"
+    app:cardCornerRadius="@dimen/card_radius"
+    app:strokeColor="@color/color_stroke"
+    app:strokeWidth="@dimen/stroke_card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/space_md">
+
+        <FrameLayout
+            android:layout_width="@dimen/sprite_md"
+            android:layout_height="@dimen/sprite_md">
+
+            <ImageView
+                android:id="@+id/scheme_preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/cd_scheme_preview"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sprite_scheme_a" />
+
+            <ImageView
+                android:id="@+id/scheme_lock"
+                android:layout_width="@dimen/icon_in_btn"
+                android:layout_height="@dimen/icon_in_btn"
+                android:layout_gravity="bottom|end"
+                android:contentDescription="@string/cd_locked"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_lock"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/scheme_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textAppearance="@style/TextAppearance.App.Title"
+            android:textSize="14sp"
+            tools:text="AZURE LOOP" />
+
+        <TextView
+            android:id="@+id/scheme_meta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.App.Label"
+            android:textSize="10sp"
+            tools:text="SEGMENTS 8, MOVES 14" />
+
+        <LinearLayout
+            android:id="@+id/scheme_pips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/scheme_pip_1"
+                android:layout_width="@dimen/pip_size"
+                android:layout_height="@dimen/pip_size"
+                android:layout_marginEnd="@dimen/space_xs"
+                android:background="@drawable/chip_pip_dim" />
+
+            <View
+                android:id="@+id/scheme_pip_2"
+                android:layout_width="@dimen/pip_size"
+                android:layout_height="@dimen/pip_size"
+                android:layout_marginEnd="@dimen/space_xs"
+                android:background="@drawable/chip_pip_dim" />
+
+            <View
+                android:id="@+id/scheme_pip_3"
+                android:layout_width="@dimen/pip_size"
+                android:layout_height="@dimen/pip_size"
+                android:background="@drawable/chip_pip_dim" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/scheme_stars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_sm"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.App.Mono"
+            android:textSize="14sp"
+            tools:text="2" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
